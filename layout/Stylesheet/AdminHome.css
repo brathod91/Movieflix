@@ -1,0 +1,35 @@
+
+body {
+    padding-top: 70px;
+    background: url("https://www.hydesleather.com/images/made/images/products/1661_640_300_s_c1.jpg") fixed;
+    text-align: center;
+}
+
+.btnbox{
+    background-color: #204d74;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+    margin: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    width: 400px;
+
+}
+
+.btnbox:active {
+    background-color: #2e6da4;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.btnbox1{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+footer {
+    margin: 50px 0;
+}

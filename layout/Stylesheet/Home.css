@@ -1,0 +1,14 @@
+
+body {
+    padding-top: 70px;
+    background: url("https://www.hydesleather.com/images/made/images/products/1661_640_300_s_c1.jpg") fixed;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+    color: black;
+}
+
+footer {
+    margin: 50px 0;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Movie or TV Show</title>
+    <link href="Stylesheet/Movie.css" rel="stylesheet">
+    <link href="Stylesheet/bootstrap.min.css" rel="stylesheet">
+    <link href="Stylesheet/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Movieflix</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="AdminHome.html">Home</a>
+                </li>
+                <li>
+                    <a href="UpdateMovie.html">Update Movie or TV Show</a>
+                </li>
+                <li>
+                    <a href="Login.html">Log out</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div id="container" class="container background">
+    <h2><b>Add Movie</b></h2>
+    <hr>
+    <div class="row">
+        <div class="col-xs-6 form-group">
+            <label class="control-label" for="mtitle">Movie Title</label>
+            <input id="mtitle" type="text" placeholder="Enter Movie Title" class="form-control input-md">
+        </div>
+        <div class="col-xs-6 form-group">
+            <label class="control-label" for="pslink">Poster Link</label>
+            <input id="pslink" type="text" placeholder="Enter Poster Link" class="form-control input-md">
+        </div>
+        <div class="col-xs-6 form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <label class="control-label" for="year">Year</label>
+                </div>
+                <div class="col-xs-3 col-sm-6">
+                    <label class="control-label" for="dtrelease">Released</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <input id="year" type="text" placeholder="Enter Year" class="form-control input-md">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <input id="dtrelease" type="text" placeholder="Enter Released Date" class="form-control input-md">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <label class="control-label" for="lang">Language</label>
+                </div>
+                <div class="col-xs-3 col-sm-6">
+                    <label class="control-label" for="rtime">Runtime</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <input id="lang" type="text" placeholder="Enter Language" class="form-control input-md">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <input id="rtime" type="text" placeholder="Enter Runtime" class="form-control input-md">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <label class="control-label" for="imdbId">Imdb ID</label>
+                </div>
+                <div class="col-xs-3 col-sm-6">
+                    <label class="control-label" for="imdbRate">Imdb Rating</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <input id="imdbId" type="text" placeholder="Enter IMDB Id" class="form-control input-md">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <input id="imdbRate" type="text" placeholder="Enter IMDB Rating" class="form-control input-md">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <label class="control-label" for="imdbvote">ImdbVotes</label>
+                </div>
+                <div class="col-xs-3 col-sm-6">
+                    <label class="control-label" for="type">Type</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <input id="imdbvote" type="text" placeholder="Enter Imdb Votes" class="form-control input-md">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <select id="type" name="selectdoc" class="form-control input-md">
+                        <option value="0">-----------Select Type------------</option>
+                        <option value="1">Movie</option>
+                        <option value="2">TV Show</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <label class="control-label" for="genre">Genre</label>
+                </div>
+                <div class="col-xs-3 col-sm-6">
+                    <label class="control-label" for="mscore">Meta Score</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <select id="genre" name="selectdoc" id="genre" class="form-control input-md">
+                        <option value="0">-----------Select Genre------------</option>
+                        <option value="1">Action</option>
+                        <option value="2">Comedy</option>
+                        <option value="3">Thriller</option>
+                        <option value="4">Drama</option>
+                        <option value="5">Romantic</option>
+                        <option value="6">Mystery</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <input id="mscore" type="text" placeholder="Enter Meta Score" class="form-control input-md">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 form-group">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <label class="control-label" for="awards">Awards</label>
+                </div>
+                <div class="col-xs-3 col-sm-6">
+                    <label class="control-label" for="country">Country</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <input id="awards" type="text" placeholder="Enter Awards" class="form-control input-md">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <select id="country" name="selectdoc" id="country" class="form-control input-md">
+                        <option value="0">-----------Select Country------------</option>
+                        <option value="1">USA</option>
+                        <option value="2">Canada</option>
+                        <option value="3">India</option>
+                        <option value="4">China</option>
+                        <option value="5">Japan</option>
+                        <option value="6">United Kingdom</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 form-group">
+            <label class="control-label" for="plot">Plot of Movie</label>
+            <textarea id="plot"  placeholder="Enter Plot of Movie" class="form-control input-md" rows="4"></textarea>
+
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-xs-4 form-group">
+            <select id="country" name="selectdoc" id="country" class="form-control input-md">
+                <option value="0">-----------Select Cast Type------------</option>
+                <option value="1">Actor</option>
+                <option value="2">Director</option>
+                <option value="3">Writer</option>
+            </select>
+        </div>
+        <div class="col-xs-4 form-group">
+            <input id="cname" type="text" placeholder="Enter Cast Name" class="form-control input-md">
+        </div>
+        <div class="col-xs-4 form-group">
+            <button id="btncast" type="submit" class="btn btn-primary btn-md" style="width:300px;">Add Cast</button>
+        </div>
+    </div>
+
+    <hr/>
+    <center>
+        <div class="form-group">
+            <button id="btnsubmit" type="submit" class="btn btn-primary btn-md" style="width: 200px;">Submit</button>
+        </div>
+    </center>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

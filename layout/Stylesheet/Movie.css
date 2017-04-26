@@ -1,0 +1,37 @@
+
+body {
+    padding-top: 70px;
+    background: url("https://www.hydesleather.com/images/made/images/products/1661_640_300_s_c1.jpg") fixed;
+}
+
+div{
+    border-radius: 20px;
+}
+
+.background{
+    background-color:white;
+}
+
+.control-label{
+    font-size: 16px;
+}
+footer {
+    margin: 50px 0;
+}
+
+.imgsize{
+    height: 200px;
+    width: 150px;
+}
+thead{
+    background-color: #222222;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+
+.btncast{
+    width: 200px;
+    align-items: center;
+}
